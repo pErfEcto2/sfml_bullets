@@ -15,10 +15,6 @@ Bullet::Bullet(Vector2f pos, Vector2f target): pos(pos), target(target) {
 void Bullet::update() {
 	bullet.move(linSpeed);
 }
-//
-void check() {
-
-}
 
 void Bullet::draw(sf::RenderTarget& rt) {
 	rt.draw(bullet);

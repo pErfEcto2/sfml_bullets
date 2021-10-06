@@ -9,7 +9,6 @@ class Bullet {
     public:
 	    Bullet(Vector2f pos, Vector2f target);
 	    void update();
-		void check();
 		void draw(RenderTarget& rt);
     private:
     	RectangleShape bullet;
