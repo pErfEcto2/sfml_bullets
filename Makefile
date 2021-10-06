@@ -1,7 +1,11 @@
-mainFile = bullets.cpp
+mainFile = main.cpp
+libFile = bullets.cpp
 
-bullets.o: $(mainFile)
+bullets.o: $(libFile)
+	g++ -c $(libFile)
+
+main.o: $(mainFile)
 	g++ -c $(mainFile)
 
-build: bullets.o
-	g++ bullets.o -lsfml-graphics -lsfml-window -lsfml-system -o bullets
+build: bullets.o main.o
+	g++ bullets.o main.o -lsfml-graphics -lsfml-window -lsfml-system -o bullets
