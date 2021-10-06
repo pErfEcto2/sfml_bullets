@@ -1,4 +1,5 @@
 .git/
 .vscode/
 bullets.o
-bullets
+main.o
+main
